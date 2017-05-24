@@ -39,4 +39,13 @@ publishing {
             }
         }
     }
+    repositories {
+    	maven { 
+    	    url "https://maven.mangoautomation.net/repository/ias-release"
+            credentials {
+            	username = "${iasUsername}"
+            	password = "${iasPassword}"
+            }
+        }
+    }
 }
